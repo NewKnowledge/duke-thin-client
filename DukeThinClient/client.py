@@ -31,7 +31,7 @@ class duke(PrimitiveBase[Inputs, Outputs, Params, Hyperparams]):
         'version': __version__,
         'name': "duke",
         # Keywords do not have a controlled vocabulary. Authors can put here whatever they find suitable.
-        'keywords': ['Dataset Descriptot'],
+        'keywords': ['Dataset Descriptor'],
         'source': {
             'name': __author__,
             'uris': [
@@ -46,7 +46,7 @@ class duke(PrimitiveBase[Inputs, Outputs, Params, Hyperparams]):
          'installation': [{
             'type': metadata_module.PrimitiveInstallationType.PIP,
             'package_uri': 'git+https://github.com/NewKnowledge/duke-thin-client.git@{git_commit}'.format(
-                git_commit=utils.current_git_commit(os.path.dirname(__file__)),
+                git_commit=326eac8c4c3765f97110be1e607c5e76627e2d54,
             ),
         }],
         # The same path the primitive is registered with entry points in setup.py.
