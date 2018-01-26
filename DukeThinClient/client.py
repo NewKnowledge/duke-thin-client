@@ -31,7 +31,7 @@ class duke(PrimitiveBase[Inputs, Outputs, Params, Hyperparams]):
         'version': __version__,
         'name': "duke",
         # Keywords do not have a controlled vocabulary. Authors can put here whatever they find suitable.
-        'keywords': ['Dataset Descriptot'],
+        'keywords': ['Dataset Descriptor'],
         'source': {
             'name': __author__,
             'uris': [
@@ -45,7 +45,7 @@ class duke(PrimitiveBase[Inputs, Outputs, Params, Hyperparams]):
         # a dependency which is not on PyPi.
          'installation': [{
             'type': metadata_module.PrimitiveInstallationType.PIP,
-            'package_uri': 'git+https://github.com/NewKnowledge/duke-thin-client.git@{git_commit}'.format(
+            'package_uri': 'git+https://github.com/NewKnowledge/duke-thin-client.git@{git_commit}#egg=DukeThinClient'.format(
                 git_commit=utils.current_git_commit(os.path.dirname(__file__)),
             ),
         }],
@@ -105,7 +105,7 @@ class duke(PrimitiveBase[Inputs, Outputs, Params, Hyperparams]):
             return self._decoder.decode(r.text)
         except:
             # Should probably do some more sophisticated error logging here
-            return "Failed predicting data frame"
+            return "Failed processing input file"
 
 
 if __name__ == '__main__':

@@ -2,7 +2,7 @@
 Thin client for interacting with dockerized duke TA1 primitive. All code is written in Python 3.5 and must be run in 3.5 or greater. 
 
 ## Output
-The output of the input dataset, e.g.:
+The output is the summary of the input content of the dataset, e.g.:
 
 ```This dataset is about Baseball Players```
 
